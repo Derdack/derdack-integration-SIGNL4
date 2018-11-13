@@ -38,6 +38,9 @@ Each time you wish to povision the notification workflow to a new SIGNL4 team, f
 1. Select the previously created event source as source for this policy and click **Next**
 1. Leave the conditions as they are and proceed
 1. Under **Alerting** select **Custom (Script)** as workflow type and choose the script you have deployed above as target.
-1. Once you policy looks similar as in the screenshot below, click **Save**
+1. Once your policy looks similar as in the screenshot below, click **Save**
     ![REST source details](doc/alerts-policy-details.png "REST source details")
 
+** That's it
+You can now hand out the API key from the REST source to the people in your organization that want to send alert notifications to their team in SIGNL4 via your EnterpriseAlert system. Any data they POST to their event source triggers their policy which forwards it to their SIGNL4 webhook via the script.
+As the EnterpriseAlert REST API and the SIGNL4 webhook are highly flexible and do not require any specific schema, they can send what they want.
